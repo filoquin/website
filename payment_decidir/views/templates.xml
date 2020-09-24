@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="decidir_form">
+		<div>
+			<input id="NROCOMERCIO" name="NROCOMERCIO" t-att-value="tx_values['NROCOMERCIO']" type="hidden"/>
+			<input id="NROOPERACION" name="NROOPERACION" t-att-value="tx_values['NROOPERACION']" type="hidden"/>
+			<input id="MONTO" name="MONTO" t-att-value="tx_values['MONTO']" type="hidden"/>
+			<input id="CUOTAS" name="CUOTAS" t-att-value="tx_values['CUOTAS']" type="hidden"/>
+			<input id="URLDINAMICA" name="URLDINAMICA" t-att-value="tx_values['URLDINAMICA']" type="hidden"/>
+			<input id="MEDIODEPAGO" name="MEDIODEPAGO" t-att-value="tx_values['MEDIODEPAGO']" type="hidden"/>
+			<input id="EMAILCLIENTE" name="EMAILCLIENTE" t-att-value="tx_values['EMAILCLIENTE']" type="hidden"/>
+			<input id="IDTRANSACCION" name="IDTRANSACCION" t-att-value="tx_values['IDTRANSACCION']" type="hidden"/>
+		</div>
+	</template>
+</odoo>

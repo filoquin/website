@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="acquirer_form_decidir" model="ir.ui.view">
+        <field name="name">acquirer.form.decidir</field>
+        <field name="model">payment.acquirer</field>
+        <field name="inherit_id" ref="payment.acquirer_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name=&quot;acquirer&quot;]" position="inside">
+                <group string="Decidir" attrs="{'invisible': [('provider', '!=', 'decidir')]}">
+                    <field attrs="{'required': [('provider', '=', 'decidir')]}" name="sps_payment_method"/>
+                    <field attrs="{'required': [('provider', '=', 'decidir')]}" name="sps_payment_plan"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
